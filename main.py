@@ -5,9 +5,34 @@ import SIRP
 import SOA
 import TIP
 import csv
+import json
 
-data = list()
-f = open("C:/Users/jis99/PycharmProjects/csv/ICS_MITRE_ATT&CK.csv", "r")
+# with open("C:/Users/jis99/PycharmProjects/dataset/attack-stix-data-master/ics-attack/ics-attack-13.1.json", "r") as json_file:
+#     ics_attack_data = json.load(json_file)
+#     print(json.dumps(ics_attack_data, indent="\t"))
+
+
+
+# print("1. Test of Workflow Model Acceptance")
+# print("2. Test of Security Accident Response Automation")
+# print("3. Test of Detection of Blended Attack using SOAR")
+#
+# testcase = input('Input test number : ')
+#
+# if testcase == '1':
+#     print("Workflow Model Acceptance")
+#
+# elif testcase == '2':
+#     print("Security Accident Response Automation")
+#
+# else:
+#     print("Detection of Blended Attack using SOAR")
+#
+#
+
+
+
+f = open("C:/Users/jis99/PycharmProjects/dataset/ICS_MITRE_ATT&CK.csv", "r")
 reader = csv.reader(f)
 data = list(reader)
 
@@ -56,13 +81,3 @@ else:
 
 
 # Accident(Attack) classification
-
-
-
-
-
-
-
-
-
-
