@@ -1,18 +1,32 @@
 import random
 
+import SIRP
 import Classification_accident
 import pandas as pd
 import openpyxl
 import numpy as np
 import os
 
+
 def tip_process(case):
     print("TIP Process is going..")
 
     if case[1] != "Normal" or "normal":
-        case[1] == 1 # this is attack
+        case[2] == 1 # this is attack
     else:
-        case[1] == 0 # this is not attack
+        case[2] == 0 # this is not attack
+
+    print("Classification Accident Process is going..")
+
+    for i in tip_attack_data():     # is attack_list check
+        if case[1] == i:
+            print("this is classificable attack")
+            case[3] = 1             # attack classificable check (1 is able)
+            SIRP.sirp_match_playbook(case)
+            break
+        else:
+            print("this is not classificable attack")
+            case[3] = 0
 
     Classification_accident.classification_accident_process(case)
 

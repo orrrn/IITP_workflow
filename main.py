@@ -27,18 +27,12 @@ import json
 #
 # else:
 #     print("Detection of Blended Attack using SOAR")
-#
-#
 
+# f = open("C:/Users/jis99/PycharmProjects/dataset/ICS_MITRE_ATT&CK.csv", "r")
+# reader = csv.reader(f)
+# data = list(reader)
 
-
-f = open("C:/Users/jis99/PycharmProjects/dataset/ICS_MITRE_ATT&CK.csv", "r")
-reader = csv.reader(f)
-data = list(reader)
-
-print(data[0])
-
-case = [None, None, 1, None, None, None, None, None]
+case = [None, None, None, None, None, None, None, None]
 # 0번째 IT/OT 스트링
 # 1번째 공격벡터-하위내용
 # 2번째 공격여부(1이 공격, 0이 일반)

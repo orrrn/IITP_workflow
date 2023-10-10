@@ -2,20 +2,20 @@ import SIRP
 import TIP
 
 def classification_accident_process(case):
-    print("Classification Accident Process is going..")
-    print(case)
-
-    for i in TIP.tip_attack_data():     # is attack_list check
-        if case[1] == i:
-            print("this is classificable attack")
-            case[2] = 1
-            SIRP.sirp_match_playbook(case)
-            break
-        else:
-            #print("this is not attack")
-            case[2] = 0
-
-    case = SIRP.sirp_match_playbook(case)
+    # print("Classification Accident Process is going..")
+    # print(case)
+    #
+    # for i in TIP.tip_attack_data():     # is attack_list check
+    #     if case[1] == i:
+    #         print("this is classificable attack")
+    #         case[2] = 1
+    #         SIRP.sirp_match_playbook(case)
+    #         break
+    #     else:
+    #         #print("this is not attack")
+    #         case[2] = 0
+    #
+    # case = SIRP.sirp_match_playbook(case)
 
 
     # if case[3] == 1:
