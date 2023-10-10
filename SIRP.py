@@ -2,6 +2,9 @@ import SOA
 import pandas as pd
 import openpyxl
 
+
+
+
 filename = 'C:/Users/jis99/PycharmProjects/dataset/ics-attack-playbook-list1-v13.1.xlsx'  # mitre ics attack list
 playbook_list1 = pd.read_excel(filename)
 pbtable = playbook_list1[['ID', 'playbook name', 'playbook existence']]
