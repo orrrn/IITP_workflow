@@ -3,20 +3,18 @@ import pandas as pd
 import openpyxl
 
 filename = 'C:/Users/jis99/PycharmProjects/dataset/ics-attack-playbook-list1-v13.1.xlsx'  # mitre ics attack list
-attack_list1 = pd.read_excel(filename)
-table = attack_list1[['ID', 'playbook name']]
-table_non = table.dropna(how="any")
-playbook_list = table_non['playbook name'].unique()  # extract mitre ics attack name list
+playbook_list1 = pd.read_excel(filename)
+pbtable = playbook_list1[['ID', 'playbook name', 'playbook existence']]
+pbtable_non = pbtable.dropna(how="any")
+playbook_list = pbtable_non['playbook name', 'playbook existence'].unique()  # extract mitre ics attack name list
 
 def sirp_generate_playbook():
     print("generate_playbook")
     sirp_add_playbook()
 
-
 def sirp_add_playbook():
     print("add new playbook at playbook list")
     # add new playbook at playbook[] list
-
 
 def sirp_match_playbook(case):
     print("matching playbooks...")
