@@ -1,0 +1,762 @@
+IT,Activate Firmware Update Mode,None,None,None,None,None,None
+IT,Adversary-in-the-Middle,None,None,None,None,None,None
+IT,Alarm Suppression,None,None,None,None,None,None
+IT,Automated Collection,None,None,None,None,None,None
+IT,Block Command Message,None,None,None,None,None,None
+IT,Block Reporting Message,None,None,None,None,None,None
+IT,Block Serial COM,None,None,None,None,None,None
+IT,Brute Force I/O,None,None,None,None,None,None
+IT,Change Credential,None,None,None,None,None,None
+IT,Change Operating Mode,None,None,None,None,None,None
+IT,Command-Line Interface,None,None,None,None,None,None
+IT,Commonly Used Port,None,None,None,None,None,None
+IT,Connection Proxy,None,None,None,None,None,None
+IT,Damage to Property,None,None,None,None,None,None
+IT,Data Destruction,None,None,None,None,None,None
+IT,Data from Information Repositories,None,None,None,None,None,None
+IT,Data from Local System,None,None,None,None,None,None
+IT,Default Credentials,None,None,None,None,None,None
+IT,Denial of Control,None,None,None,None,None,None
+IT,Denial of Service,None,None,None,None,None,None
+IT,Denial of View,None,None,None,None,None,None
+IT,Detect Operating Mode,None,None,None,None,None,None
+IT,Device Restart/Shutdown,None,None,None,None,None,None
+IT,Drive-by Compromise,None,None,None,None,None,None
+IT,Execution through API,None,None,None,None,None,None
+IT,Exploit Public-Facing Application,None,None,None,None,None,None
+IT,Exploitation for Evasion,None,None,None,None,None,None
+IT,Exploitation for Privilege Escalation,None,None,None,None,None,None
+IT,Exploitation of Remote Services,None,None,None,None,None,None
+IT,External Remote Services,None,None,None,None,None,None
+IT,Graphical User Interface,None,None,None,None,None,None
+IT,Hardcoded Credentials,None,None,None,None,None,None
+IT,Hooking,None,None,None,None,None,None
+IT,I/O Image,None,None,None,None,None,None
+IT,Indicator Removal on Host,None,None,None,None,None,None
+IT,Internet Accessible Device,None,None,None,None,None,None
+IT,Lateral Tool Transfer,None,None,None,None,None,None
+IT,Loss of Availability,None,None,None,None,None,None
+IT,Loss of Control,None,None,None,None,None,None
+IT,Loss of Productivity and Revenue,None,None,None,None,None,None
+IT,Loss of Protection,None,None,None,None,None,None
+IT,Loss of Safety,None,None,None,None,None,None
+IT,Loss of View,None,None,None,None,None,None
+IT,Manipulate I/O Image,None,None,None,None,None,None
+IT,Manipulation of Control,None,None,None,None,None,None
+IT,Manipulation of View,None,None,None,None,None,None
+IT,Masquerading,None,None,None,None,None,None
+IT,Modify Alarm Settings,None,None,None,None,None,None
+IT,Modify Controller Tasking,None,None,None,None,None,None
+IT,Modify Parameter,None,None,None,None,None,None
+IT,Modify Program,None,None,None,None,None,None
+IT,Module Firmware,None,None,None,None,None,None
+IT,Monitor Process State,None,None,None,None,None,None
+IT,Native API,None,None,None,None,None,None
+IT,Network Connection Enumeration,None,None,None,None,None,None
+IT,Network Sniffing,None,None,None,None,None,None
+IT,Point & Tag Identification,None,None,None,None,None,None
+IT,Program Download,None,None,None,None,None,None
+IT,Program Upload,None,None,None,None,None,None
+IT,Project File Infection,None,None,None,None,None,None
+IT,Remote Services,None,None,None,None,None,None
+IT,Remote System Discovery,None,None,None,None,None,None
+IT,Remote System Information Discovery,None,None,None,None,None,None
+IT,Replication Through Removable Media,None,None,None,None,None,None
+IT,Rogue Master,None,None,None,None,None,None
+IT,Rootkit,None,None,None,None,None,None
+IT,Screen Capture,None,None,None,None,None,None
+IT,Scripting,None,None,None,None,None,None
+IT,Service Stop,None,None,None,None,None,None
+IT,Spearphishing Attachment,None,None,None,None,None,None
+IT,Spoof Reporting Message,None,None,None,None,None,None
+IT,Standard Application Layer Protocol,None,None,None,None,None,None
+IT,Supply Chain Compromise,None,None,None,None,None,None
+IT,System Firmware,None,None,None,None,None,None
+IT,Theft of Operational Information,None,None,None,None,None,None
+IT,Transient Cyber Asset,None,None,None,None,None,None
+IT,Unauthorized Command Message,None,None,None,None,None,None
+IT,User Execution,None,None,None,None,None,None
+IT,Valid Accounts,None,None,None,None,None,None
+IT,Wireless Compromise,None,None,None,None,None,None
+IT,Wireless Sniffing,None,None,None,None,None,None
+OT,Activate Firmware Update Mode,None,None,None,None,None,None
+OT,Adversary-in-the-Middle,None,None,None,None,None,None
+OT,Alarm Suppression,None,None,None,None,None,None
+OT,Automated Collection,None,None,None,None,None,None
+OT,Block Command Message,None,None,None,None,None,None
+OT,Block Reporting Message,None,None,None,None,None,None
+OT,Block Serial COM,None,None,None,None,None,None
+OT,Brute Force I/O,None,None,None,None,None,None
+OT,Change Credential,None,None,None,None,None,None
+OT,Change Operating Mode,None,None,None,None,None,None
+OT,Command-Line Interface,None,None,None,None,None,None
+OT,Commonly Used Port,None,None,None,None,None,None
+OT,Connection Proxy,None,None,None,None,None,None
+OT,Damage to Property,None,None,None,None,None,None
+OT,Data Destruction,None,None,None,None,None,None
+OT,Data from Information Repositories,None,None,None,None,None,None
+OT,Data from Local System,None,None,None,None,None,None
+OT,Default Credentials,None,None,None,None,None,None
+OT,Denial of Control,None,None,None,None,None,None
+OT,Denial of Service,None,None,None,None,None,None
+OT,Denial of View,None,None,None,None,None,None
+OT,Detect Operating Mode,None,None,None,None,None,None
+OT,Device Restart/Shutdown,None,None,None,None,None,None
+OT,Drive-by Compromise,None,None,None,None,None,None
+OT,Execution through API,None,None,None,None,None,None
+OT,Exploit Public-Facing Application,None,None,None,None,None,None
+OT,Exploitation for Evasion,None,None,None,None,None,None
+OT,Exploitation for Privilege Escalation,None,None,None,None,None,None
+OT,Exploitation of Remote Services,None,None,None,None,None,None
+OT,External Remote Services,None,None,None,None,None,None
+OT,Graphical User Interface,None,None,None,None,None,None
+OT,Hardcoded Credentials,None,None,None,None,None,None
+OT,Hooking,None,None,None,None,None,None
+OT,I/O Image,None,None,None,None,None,None
+OT,Indicator Removal on Host,None,None,None,None,None,None
+OT,Internet Accessible Device,None,None,None,None,None,None
+OT,Lateral Tool Transfer,None,None,None,None,None,None
+OT,Loss of Availability,None,None,None,None,None,None
+OT,Loss of Control,None,None,None,None,None,None
+OT,Loss of Productivity and Revenue,None,None,None,None,None,None
+OT,Loss of Protection,None,None,None,None,None,None
+OT,Loss of Safety,None,None,None,None,None,None
+OT,Loss of View,None,None,None,None,None,None
+OT,Manipulate I/O Image,None,None,None,None,None,None
+OT,Manipulation of Control,None,None,None,None,None,None
+OT,Manipulation of View,None,None,None,None,None,None
+OT,Masquerading,None,None,None,None,None,None
+OT,Modify Alarm Settings,None,None,None,None,None,None
+OT,Modify Controller Tasking,None,None,None,None,None,None
+OT,Modify Parameter,None,None,None,None,None,None
+OT,Modify Program,None,None,None,None,None,None
+OT,Module Firmware,None,None,None,None,None,None
+OT,Monitor Process State,None,None,None,None,None,None
+OT,Native API,None,None,None,None,None,None
+OT,Network Connection Enumeration,None,None,None,None,None,None
+OT,Network Sniffing,None,None,None,None,None,None
+OT,Point & Tag Identification,None,None,None,None,None,None
+OT,Program Download,None,None,None,None,None,None
+OT,Program Upload,None,None,None,None,None,None
+OT,Project File Infection,None,None,None,None,None,None
+OT,Remote Services,None,None,None,None,None,None
+OT,Remote System Discovery,None,None,None,None,None,None
+OT,Remote System Information Discovery,None,None,None,None,None,None
+OT,Replication Through Removable Media,None,None,None,None,None,None
+OT,Rogue Master,None,None,None,None,None,None
+OT,Rootkit,None,None,None,None,None,None
+OT,Screen Capture,None,None,None,None,None,None
+OT,Scripting,None,None,None,None,None,None
+OT,Service Stop,None,None,None,None,None,None
+OT,Spearphishing Attachment,None,None,None,None,None,None
+OT,Spoof Reporting Message,None,None,None,None,None,None
+OT,Standard Application Layer Protocol,None,None,None,None,None,None
+OT,Supply Chain Compromise,None,None,None,None,None,None
+OT,System Firmware,None,None,None,None,None,None
+OT,Theft of Operational Information,None,None,None,None,None,None
+OT,Transient Cyber Asset,None,None,None,None,None,None
+OT,Unauthorized Command Message,None,None,None,None,None,None
+OT,User Execution,None,None,None,None,None,None
+OT,Valid Accounts,None,None,None,None,None,None
+OT,Wireless Compromise,None,None,None,None,None,None
+OT,Wireless Sniffing,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+IT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+OT,Normal,None,None,None,None,None,None
+IT,preemptive,None,None,None,None,None,None
+IT,arbitrator,None,None,None,None,None,None
+IT,pay,None,None,None,None,None,None
+IT,capture,None,None,None,None,None,None
+IT,captivate,None,None,None,None,None,None
+IT,captious,None,None,None,None,None,None
+IT,capability,None,None,None,None,None,None
+IT,capacity,None,None,None,None,None,None
+IT,incapacitate,None,None,None,None,None,None
+IT,anticipate,None,None,None,None,None,None
+IT,discipline,None,None,None,None,None,None
+IT,recipient,None,None,None,None,None,None
+IT,receptive,None,None,None,None,None,None
+IT,accept,None,None,None,None,None,None
+IT,conceive,None,None,None,None,None,None
+IT,conceit,None,None,None,None,None,None
+IT,deceptive,None,None,None,None,None,None
+IT,susceptible,None,None,None,None,None,None
+IT,perceive,None,None,None,None,None,None
+IT,imperceptible,None,None,None,None,None,None
+IT,precept,None,None,None,None,None,None
+IT,occupation,None,None,None,None,None,None
+IT,recuperate,None,None,None,None,None,None
+IT,comprehensive,None,None,None,None,None,None
+IT,apprehend,None,None,None,None,None,None
+IT,reprehensible,None,None,None,None,None,None
+IT,impregnable,None,None,None,None,None,None
+IT,enterprising,None,None,None,None,None,None
+IT,apprise,None,None,None,None,None,None
+IT,propriety,None,None,None,None,None,None
+IT,exemplary,None,None,None,None,None,None
+IT,exempt,None,None,None,None,None,None
+IT,prompt,None,None,None,None,None,None
+IT,impromptu,None,None,None,None,None,None
+IT,redeem,None,None,None,None,None,None
+IT,assume,None,None,None,None,None,None
+IT,unassuming,None,None,None,None,None,None
+IT,presumptuous,None,None,None,None,None,None
+IT,sumptuous,None,None,None,None,None,None
+IT,presume,None,None,None,None,None,None
+IT,consume,None,None,None,None,None,None
+IT,resume,None,None,None,None,None,None
+IT,surreptitious,None,None,None,None,None,None
+IT,ravage,None,None,None,None,None,None
+IT,donate,None,None,None,None,None,None
+IT,endow,None,None,None,None,None,None
+IT,dote,None,None,None,None,None,None
+IT,dose,None,None,None,None,None,None
+IT,antidote,None,None,None,None,None,None
+IT,anecdote,None,None,None,None,None,None
+IT,condone,None,None,None,None,None,None
+IT,render,None,None,None,None,None,None
+IT,surrender,None,None,None,None,None,None
+IT,yield,None,None,None,None,None,None
+IT,attribute,None,None,None,None,None,None
+IT,contribute,None,None,None,None,None,None
+IT,distribute,None,None,None,None,None,None
+IT,retribution,None,None,None,None,None,None
+IT,expensive,None,None,None,None,None,None
+IT,compensate,None,None,None,None,None,None
+IT,dispense,None,None,None,None,None,None
+IT,indispensable,None,None,None,None,None,None
+IT,pension,None,None,None,None,None,None
+IT,remuneration,None,None,None,None,None,None
+IT,immune,None,None,None,None,None,None
+IT,afford,None,None,None,None,None,None
+IT,reimburse,None,None,None,None,None,None
+IT,abstain,None,None,None,None,None,None
+IT,maintain,None,None,None,None,None,None
+IT,sustain,None,None,None,None,None,None
+IT,retain,None,None,None,None,None,None
+IT,tenacious,None,None,None,None,None,None
+IT,tenable,None,None,None,None,None,None
+IT,tenet,None,None,None,None,None,None
+IT,pertinent,None,None,None,None,None,None
+IT,continually,None,None,None,None,None,None
+IT,detain,None,None,None,None,None,None
+IT,procrastinate,None,None,None,None,None,None
+IT,stick,None,None,None,None,None,None
+IT,adhere,None,None,None,None,None,None
+IT,coherent,None,None,None,None,None,None
+IT,serve,None,None,None,None,None,None
+IT,servitude,None,None,None,None,None,None
+IT,deserve,None,None,None,None,None,None
+IT,conserve,None,None,None,None,None,None
+IT,conservative,None,None,None,None,None,None
+IT,preserve,None,None,None,None,None,None
+IT,reserve,None,None,None,None,None,None
+IT,observe,None,None,None,None,None,None
+IT,fast,None,None,None,None,None,None
+IT,steadfast,None,None,None,None,None,None
+IT,fastidious,None,None,None,None,None,None
+IT,fascinate,None,None,None,None,None,None
+IT,catchy,None,None,None,None,None,None
+IT,replace,None,None,None,None,None,None
+IT,postpone,None,None,None,None,None,None
+IT,posture,None,None,None,None,None,None
+IT,compose,None,None,None,None,None,None
+IT,compound,None,None,None,None,None,None
+IT,component,None,None,None,None,None,None
+OT,dispose,None,None,None,None,None,None
+OT,disposition,None,None,None,None,None,None
+OT,disposal,None,None,None,None,None,None
+OT,depose,None,None,None,None,None,None
+OT,expose,None,None,None,None,None,None
+OT,exponent,None,None,None,None,None,None
+OT,impose,None,None,None,None,None,None
+OT,purpose,None,None,None,None,None,None
+OT,proposition,None,None,None,None,None,None
+OT,proponent,None,None,None,None,None,None
+OT,opponent,None,None,None,None,None,None
+OT,opposite,None,None,None,None,None,None
+OT,supposition,None,None,None,None,None,None
+OT,postulate,None,None,None,None,None,None
+OT,expostulation,None,None,None,None,None,None
+OT,thesis,None,None,None,None,None,None
+OT,antithesis,None,None,None,None,None,None
+OT,synthesis,None,None,None,None,None,None
+OT,hypothesis,None,None,None,None,None,None
+OT,locate,None,None,None,None,None,None
+OT,allocate,None,None,None,None,None,None
+OT,assert,None,None,None,None,None,None
+OT,desert,None,None,None,None,None,None
+OT,exert,None,None,None,None,None,None
+OT,concert,None,None,None,None,None,None
+OT,settle,None,None,None,None,None,None
+OT,beset,None,None,None,None,None,None
+OT,besiege,None,None,None,None,None,None
+OT,onset,None,None,None,None,None,None
+OT,offset,None,None,None,None,None,None
+OT,upset,None,None,None,None,None,None
+OT,setback,None,None,None,None,None,None
+OT,outstanding,None,None,None,None,None,None
+OT,statute,None,None,None,None,None,None
+OT,stature,None,None,None,None,None,None
+OT,status,None,None,None,None,None,None
+OT,state,None,None,None,None,None,None
+OT,station,None,None,None,None,None,None
+OT,stasis,None,None,None,None,None,None
+OT,stalemate,None,None,None,None,None,None
+OT,stale,None,None,None,None,None,None
+OT,apostate,None,None,None,None,None,None
+OT,stake,None,None,None,None,None,None
+OT,stable,None,None,None,None,None,None
+OT,staple,None,None,None,None,None,None
+OT,stem,None,None,None,None,None,None
+OT,constitute,None,None,None,None,None,None
+OT,institute,None,None,None,None,None,None
+OT,substitute,None,None,None,None,None,None
+OT,destitute,None,None,None,None,None,None
+OT,superstition,None,None,None,None,None,None
+OT,insist,None,None,None,None,None,None
+OT,subsist,None,None,None,None,None,None
+OT,resistant,None,None,None,None,None,None
+OT,consistent,None,None,None,None,None,None
+OT,persistent,None,None,None,None,None,None
+OT,constant,None,None,None,None,None,None
+OT,obstinate,None,None,None,None,None,None
+OT,instantaneous,None,None,None,None,None,None
+OT,circumstance,None,None,None,None,None,None
+OT,substantial,None,None,None,None,None,None
+OT,substantiate,None,None,None,None,None,None
+OT,sedative,None,None,None,None,None,None
+OT,sediment,None,None,None,None,None,None
+OT,residue,None,None,None,None,None,None
+OT,sedentary,None,None,None,None,None,None
+OT,assiduous,None,None,None,None,None,None
+OT,insidious,None,None,None,None,None,None
+OT,subsidize,None,None,None,None,None,None
+OT,subside,None,None,None,None,None,None
+OT,assess,None,None,None,None,None,None
+OT,supersede,None,None,None,None,None,None
+OT,supplant,None,None,None,None,None,None
+OT,elastic,None,None,None,None,None,None
+OT,endure,None,None,None,None,None,None
+OT,durable,None,None,None,None,None,None
+OT,obdurate,None,None,None,None,None,None
+OT,remnant,None,None,None,None,None,None
+OT,leftover,None,None,None,None,None,None
+OT,debris,None,None,None,None,None,None
+OT,emanate,None,None,None,None,None,None
+OT,permanent,None,None,None,None,None,None
+OT,relinquish,None,None,None,None,None,None
+OT,derelict,None,None,None,None,None,None
+OT,delinquent,None,None,None,None,None,None
+OT,eclipse,None,None,None,None,None,None
+OT,fleeting,None,None,None,None,None,None
+OT,fugitive,None,None,None,None,None,None
+OT,fugacious,None,None,None,None,None,None
+OT,subterfuge,None,None,None,None,None,None
+OT,depend,None,None,None,None,None,None
+OT,suspend,None,None,None,None,None,None
+OT,penchant,None,None,None,None,None,None
+OT,propensity,None,None,None,None,None,None
+OT,perpendicular,None,None,None,None,None,None
+OT,impending,None,None,None,None,None,None
+OT,imminent,None,None,None,None,None,None
+OT,eminent,None,None,None,None,None,None
+OT,prominent,None,None,None,None,None,None
+OT,border,None,None,None,None,None,None
