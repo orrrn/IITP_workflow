@@ -39,13 +39,13 @@ def tip_process(case):
 
 def tip_attack_data():
     filename = './dataset/ics-attack-v13.1.xlsx'  #mitre ics attack list
-    attack_list1 = pd.read_excel(filename, sheet_name="techniques")
-    table = attack_list1[['ID', 'name']]
-    table_non = table.dropna(how="any")
-    attack_list = table_non['name'].unique()                                   #extract mitre ics attack name list
+    attack_list_tmp = pd.read_excel(filename, sheet_name="techniques")
+    att_table = attack_list_tmp[['ID', 'name']]
+    att_table_non = att_table.dropna(how="any")
+    attack_id_list = att_table_non['ID'].unique()
+    attack_name_list = att_table_non['name'].unique()                                   #extract mitre ics attack name list
+    attack_list = list(zip(attack_id_list, attack_name_list))
 
     print("data related security threat was collected")
     # collect data related security threat
     return attack_list
-
-

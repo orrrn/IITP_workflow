@@ -13,12 +13,12 @@ import openpyxl
 
 filename = './dataset/ics-attack-playbook-list1-v13.1.xlsx' # mitre ics attack list
 playbook_list_tmp = pd.read_excel(filename)
-pbtable = playbook_list_tmp[['ID', 'playbook name', 'playbook existence']]
-pbtable_non = pbtable.dropna(how="any")
-playbook_name_list = pbtable_non['playbook name'].unique()  # extract mitre ics attack name list
-playbook_exist_list = pbtable_non['playbook existence'] #.unique()
+pb_table = playbook_list_tmp[['ID', 'playbook name', 'playbook existence']]
+pb_table_non = pb_table.dropna(how="any")
+playbook_name_list = pb_table_non['playbook name'].unique()  # extract mitre ics attack name list
+playbook_exist_list = pb_table_non['playbook existence'].unique()
 playbook_list = list(zip(playbook_name_list, playbook_exist_list))
-print(playbook_list)
+# print(playbook_list)
 
 
 
