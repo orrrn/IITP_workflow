@@ -5,11 +5,22 @@ import openpyxl
 
 
 
-filename = 'C:/Users/jis99/PycharmProjects/dataset/ics-attack-playbook-list1-v13.1.xlsx'  # mitre ics attack list
-playbook_list1 = pd.read_excel(filename)
-pbtable = playbook_list1[['ID', 'playbook name', 'playbook existence']]
+# filename = './dataset/ics-attack-playbook-list1-v13.1.xlsx'  # mitre ics attack list
+# playbook_list_tmp = pd.read_excel(filename, sheet_name="playbook_list")
+# pbtable = playbook_list_tmp[['ID', 'playbook name', 'playbook existence']]
+# pbtable_non = pbtable.dropna(how="any")
+# playbook_list = pbtable_non['playbook existence'].unique()  # extract mitre ics attack name list
+
+filename = './dataset/ics-attack-playbook-list1-v13.1.xlsx' # mitre ics attack list
+playbook_list_tmp = pd.read_excel(filename)
+pbtable = playbook_list_tmp[['ID', 'playbook name', 'playbook existence']]
 pbtable_non = pbtable.dropna(how="any")
-playbook_list = pbtable_non['playbook name', 'playbook existence'].unique()  # extract mitre ics attack name list
+playbook_name_list = pbtable_non['playbook name'].unique()  # extract mitre ics attack name list
+playbook_exist_list = pbtable_non['playbook existence'] #.unique()
+playbook_list = list(zip(playbook_name_list, playbook_exist_list))
+print(playbook_list)
+
+
 
 def sirp_generate_playbook():
     print("generate_playbook")
