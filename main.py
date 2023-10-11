@@ -30,7 +30,7 @@ import json
 
 # f = open("C:/Users/jis99/PycharmProjects/dataset/ICS_MITRE_ATT&CK.csv", "r")
 # reader = csv.reader(f)
-# data = list(reader)
+# data = list(reader)햣
 
 case = [None, None, None, None, None, None, None, None]
 # 0번째 IT/OT 스트링

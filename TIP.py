@@ -38,7 +38,7 @@ def tip_process(case):
 
 
 def tip_attack_data():
-    filename = 'C:/Users/jis99/PycharmProjects/dataset/ics-attack-v13.1.xlsx'  #mitre ics attack list
+    filename = './dataset/ics-attack-v13.1.xlsx'  #mitre ics attack list
     attack_list1 = pd.read_excel(filename, sheet_name="techniques")
     table = attack_list1[['ID', 'name']]
     table_non = table.dropna(how="any")
