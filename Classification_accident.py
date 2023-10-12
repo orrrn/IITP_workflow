@@ -29,21 +29,21 @@ def classification_accident_process(case):
 
     return case
 
-def classification_accident_risk(case):
-    print("Classification Accident Risk and Anaysis Attack Range")
+# def classification_accident_risk(case):
+#     print("Classification Accident Risk and Anaysis Attack Range")
 
-    if case[4] <= 2:
-        print("This Accident's Risk is Major to Critical")
+#     if case[4] <= 2:
+#         print("This Accident's Risk is Major to Critical")
 
-        risk = 1 #if risk is high
+#         risk = 1 #if risk is high
 
-    elif 2 < case[4] <= 5:
-        print("This Accident's Risk is Minor to Advisory")
-        SIRP.sirp_play_playbook(case)
+#     elif 2 < case[4] <= 5:
+#         print("This Accident's Risk is Minor to Advisory")
+#         SIRP.sirp_play_playbook(case)
 
-        risk = 0 #if risk is low
-    else:
-        print("The Risk is wrong. This is Error.")
+#         risk = 0 #if risk is low
+#     else:
+#         print("The Risk is wrong. This is Error.")
 
 
-    return isrisky[case, risk]
+#     return isrisky[case, risk]

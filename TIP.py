@@ -1,22 +1,35 @@
 import random
 
 import SIRP
+import Passive
 import Classification_accident
 import pandas as pd
 import openpyxl
 import numpy as np
 import os
 
+#case
+# 0번째 IT/OT 스트링
+# 1번째 공격벡터-하위내용
+# 2번째 공격여부(1이 공격, 0이 일반)
+# 3번째 공격분류여부(1이 공격분류 가능, 0이 공격분류 불가능)
+# 4번째 playbook 존재 여부(1이 존재, 0이 존재하지 않음)
+# 5번째 Risk 숫자 1부터 5
+# 6번째 Risk major or minor 여부(1이 major-플레이북 실행 전 추가분석 수행, 0이 minor-playbook 바로 실행)
+# 6번째 기존 플레이북 개선 여부(1가능, 2불가능, 3디폴트(초기화))
+# 7번째 공격 대응 성공 여부(1가능, 2불가능, 3디폴트(초기화))
+# 8번째 개선사항 유무(1필요, 2불필요, 3디폴트(초기화))
+
 
 def tip_process(case):
     print("TIP Process is going..")
+    case = ["IT", "Denial of Service", 1, None, 5, None, None, None]
 
     if case[1] != "Normal" or "normal":
         case[2] == 1 # this is attack
     else:
         case[2] == 0 # this is not attack
 
-    case = ["IT", "Denial of Service", 1, None, 5, None, None, None, None]
 
     print("Classification Accident Process is going..")
 
@@ -26,21 +39,50 @@ def tip_process(case):
             # print(tip_attack_data()[i][1])
             case[3] = 1             # attack classificable check (1 is able)
             SIRP.sirp_match_playbook(case)
+            
+            if case[4] == 1:   # playbook exist
+                tip_accident_risk_eval(case)
+                # SIRP.sirp_play_playbook(case)
+            elif case[4] == 0:
+                Passive.passive_alert(case)
+                Passive.passive_analyzing(case)
+                Passive.passive_response_and_documentation(case)      
+                SIRP.sirp_generate_playbook(case)
             break
         else:
             case[3] = 0    # attack unclassificable check (0 is unable)
+            Passive.passive_alert(case)
+            Passive.passive_analyzing(case)
+            Passive.passive_response_and_documentation(case)            
+            break
 
-            # print("this is the length of list")
-            # print(case[1])
-            # print("--------------------------------------------")
-            # print(tip_attack_data()[i][1])
-            # print("this is not classificable attack")
-            # print("this " + case[1] + "is not classified as" + i)
-
+    print(case)
     print("TIP Process is finished")
 
     return case
 
+def tip_accident_risk_eval(case):
+    print("Classification Accident Risk and Anaysis Attack Range")
+
+
+#   how to eval the risk .. based on open source
+#   how to eval the risk .. based on open source
+#   how to eval the risk .. based on open source
+#   how to eval the risk .. based on open source
+#   how to eval the risk .. based on open source
+
+    if case[5] <= 2:
+        print("This Accident's Risk is Major to Critical")
+        case[6] = 1 #if risk is major
+
+    elif 2 < case[5] <= 5:
+        print("This Accident's Risk is Minor to Advisory")
+        case[6] = 0 #if risk is minor
+        SIRP.sirp_play_playbook(case)
+    else:
+        print("The Risk is wrong. This is Error.")
+        
+    return isrisky[case, risk]
 
 def tip_attack_data():
     filename = './dataset/ics-attack-v13.1.xlsx'  #mitre ics attack list
