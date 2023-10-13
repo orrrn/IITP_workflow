@@ -13,9 +13,9 @@ import openpyxl
 # 4번째 playbook 존재 여부(1이 존재, 0이 존재하지 않음)
 # 5번째 Risk 숫자 1부터 5
 # 6번째 Risk major or minor 여부(1이 major-플레이북 실행 전 추가분석 수행, 0이 minor-playbook 바로 실행)
-# 6번째 기존 플레이북 개선 여부(1가능, 0 불가능)
-# 7번째 공격 대응 성공 여부(1가능, 0 불가능)
-# 8번째 개선사항 유무(1필요, 0 불필요)
+# 7번째 기존 플레이북 개선 여부(1가능, 0불가능)
+# 8번째 공격 대응 성공 여부(1가능, 0실패)
+# 9번째 개선사항 유무(1필요, 0불필요)
 
 
 # filename = './dataset/ics-attack-playbook-list1-v13.1.xlsx'  # mitre ics attack list
@@ -37,9 +37,10 @@ def sirp_playbook_data():
     return playbook_list
 
 
-# def sirp_generate_playbook(case):
-#     print("generate_playbook")
-#     sirp_add_playbook()
+def sirp_generate_playbook(case):
+    print("generate_playbook")
+
+    return case
 
 #     return case
 
@@ -69,15 +70,14 @@ def sirp_play_playbook(case):
     print("play this playbook..")
     # finding playbook
     
-    if sirp_playbook_worked()[7] == 1:
+    if sirp_playbook_worked(case)[8] == 1:
         print("playbook was worked!")
 
-    elif sirp_playbook_worked()[7] == 0:
+    elif sirp_playbook_worked(case)[8] == 0:
         print("playbook was not worked")
         print("Additional anlyzing attack vector")
         Passive.passive_alert(case)
         Passive.passive_analyzing(case)
-
         Passive.passive_response_and_documentation(case)
 
     else:
@@ -93,6 +93,6 @@ def sirp_playbook_worked(case):
 
 
 def sirp_playbook_can_improve(case): #check is playbook can be improve for response accident
-    print("check play")
+    print("check existed playbook can improve")
     # result = SOA.soa_analyzing_more_AV(case)
     return case

@@ -16,14 +16,14 @@ import os
 # 4번째 playbook 존재 여부(1이 존재, 0이 존재하지 않음)
 # 5번째 Risk 숫자 1부터 5
 # 6번째 Risk major or minor 여부(1이 major-플레이북 실행 전 추가분석 수행, 0이 minor-playbook 바로 실행)
-# 6번째 기존 플레이북 개선 여부(1가능, 2불가능, 3디폴트(초기화))
-# 7번째 공격 대응 성공 여부(1가능, 2불가능, 3디폴트(초기화))
-# 8번째 개선사항 유무(1필요, 2불필요, 3디폴트(초기화))
+# 7번째 기존 플레이북 개선 여부(1가능, 0불가능)
+# 8번째 공격 대응 성공 여부(1가능, 0실패)
+# 9번째 개선사항 유무(1필요, 0불필요)
 
 
 def tip_process(case):
     print("TIP Process is going..")
-    case = ["IT", "Denial of Service", 1, None, 5, None, None, None]
+    case = ["IT", "Denial of Service", 1, None, 5, None, None, None, None]
 
     if case[1] != "Normal" or "normal":
         case[2] == 1 # this is attack
@@ -42,19 +42,39 @@ def tip_process(case):
             
             if case[4] == 1:   # playbook exist
                 tip_accident_risk_eval(case)
-                # SIRP.sirp_play_playbook(case)
-            elif case[4] == 0:
+                
+                if case[6] == 1:  # this attack risk is major or critical
+                    Passive.passive_analyzing(case) # if this attack risk is major, do additional attack analyzing.
+                    SIRP.sirp_playbook_can_improve(case) # checking this attack can be handled by using exist playbook(after improving)
+                    if case[7] == 1: # can using exist playbook
+                        SIRP.sirp_generate_playbook(case) # generate improved playbook
+
+                    elif case[7] == 0: # can not using exist playbook
+                        Passive.passive_response_and_documentation(case)
+                        Passive.passive_generate_playbook(case)
+
+                    SIRP.sirp_match_playbook(case)
+                    SIRP.sirp_play_playbook(case)
+
+                elif case[6] == 0: # this attack risk is minor
+                    SIRP.sirp_play_playbook(case)
+                    
+            elif case[4] == 0: #playbook doesn't exist
                 Passive.passive_alert(case)
                 Passive.passive_analyzing(case)
                 Passive.passive_response_and_documentation(case)      
-                SIRP.sirp_generate_playbook(case)
-            break
+                Passive.passive_generate_playbook(case)
+                SIRP.sirp_match_playbook(case)
+                SIRP.sirp_play_playbook(case)
+
         else:
             case[3] = 0    # attack unclassificable check (0 is unable)
             Passive.passive_alert(case)
             Passive.passive_analyzing(case)
-            Passive.passive_response_and_documentation(case)            
-            break
+            Passive.passive_response_and_documentation(case)  
+            Passive.passive_generate_playbook(case)
+            SIRP.sirp_match_playbook(case)
+            SIRP.sirp_play_playbook(case)          
 
     print(case)
     print("TIP Process is finished")
@@ -78,11 +98,10 @@ def tip_accident_risk_eval(case):
     elif 2 < case[5] <= 5:
         print("This Accident's Risk is Minor to Advisory")
         case[6] = 0 #if risk is minor
-        SIRP.sirp_play_playbook(case)
     else:
         print("The Risk is wrong. This is Error.")
         
-    return isrisky[case, risk]
+    return case
 
 def tip_attack_data():
     filename = './dataset/ics-attack-v13.1.xlsx'  #mitre ics attack list

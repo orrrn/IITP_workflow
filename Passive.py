@@ -9,9 +9,9 @@ import TIP
 # 4번째 playbook 존재 여부(1이 존재, 0이 존재하지 않음)
 # 5번째 Risk 숫자 1부터 5
 # 6번째 Risk major or minor 여부(1이 major-플레이북 실행 전 추가분석 수행, 0이 minor-playbook 바로 실행)
-# 6번째 기존 플레이북 개선 여부(1가능, 2불가능, 3디폴트(초기화))
-# 7번째 공격 대응 성공 여부(1가능, 2불가능, 3디폴트(초기화))
-# 8번째 개선사항 유무(1필요, 2불필요, 3디폴트(초기화))
+# 7번째 기존 플레이북 개선 여부(1가능, 0불가능)
+# 8번째 공격 대응 성공 여부(1가능, 0실패)
+# 9번째 개선사항 유무(1필요, 0불필요)
 
 def passive_alert(case):
     print("this accident has to be analyzed passively")
