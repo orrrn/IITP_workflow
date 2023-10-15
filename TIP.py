@@ -35,17 +35,20 @@ def tip_process(case):
 
     for i in range(len(tip_attack_data())):     # is attack_list check
         if case[1] == tip_attack_data()[i][1]:
-            # print(case[1])
-            # print(tip_attack_data()[i][1])
+            
             case[3] = 1             # attack classificable check (1 is able)
             SIRP.sirp_match_playbook(case)
-            
+
             if case[4] == 1:   # playbook exist
+                print("------------------------------")
+                print(case)
+                print("------------------------------")
                 tip_accident_risk_eval(case)
-                
+
                 if case[6] == 1:  # this attack risk is major or critical
                     Passive.passive_analyzing(case) # if this attack risk is major, do additional attack analyzing.
                     SIRP.sirp_playbook_can_improve(case) # checking this attack can be handled by using exist playbook(after improving)
+
                     if case[7] == 1: # can using exist playbook
                         SIRP.sirp_generate_playbook(case) # generate improved playbook
 

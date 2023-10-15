@@ -24,15 +24,36 @@ import openpyxl
 # pbtable_non = pbtable.dropna(how="any")
 # playbook_list = pbtable_non['playbook existence'].unique()  # extract mitre ics attack name list
 
+def tip_attack_data():
+    filename = './dataset/ics-attack-v13.1.xlsx'  #mitre ics attack list
+    attack_list_tmp = pd.read_excel(filename, sheet_name="techniques")
+    att_table = attack_list_tmp[['ID', 'name', 'description', 'created', 'last modified', 'version', 'tactics']]
+    att_table_non = att_table.dropna(how="any")
+    attack_id_list = att_table_non['ID'].unique()
+    attack_name_list = att_table_non['name'].unique()                      #extract mitre ics attack name list
+    # attack_description_list = att_table_non['description'].unique()
+    attack_created_list = att_table_non['created'].unique()
+    attack_last_modified_list = att_table_non['last modified'].unique()
+    attack_version_list = att_table_non['version'].unique()
+    attack_tactics_list = att_table_non['tactics'].unique()        
+    # attack_list = [[ID, name, created, last_modifed, version, tactics] for ID, name, created, last_modifed, version, tactics in zip(attack_id_list, attack_name_list, attack_created_list, attack_last_modified_list, attack_version_list, attack_tactics_list)]
+    attack_list = [[ID, name] for ID, name in zip(attack_id_list, attack_name_list)]
+    # print("data related security threat was collected")
+    # collect data related security threat
+    return attack_list
+
+
+
 def sirp_playbook_data():
     filename = './dataset/ics-attack-playbook-list1-v13.1.xlsx' # mitre ics attack list
-    playbook_list_tmp = pd.read_excel(filename)
-    pb_table = playbook_list_tmp[['ID', 'playbook name', 'playbook existence']]
+    playbook_list_tmp = pd.read_excel(filename, sheet_name="playbook_list")
+    pb_table = playbook_list_tmp[['ID', 'playbook_name', 'playbook_existence']]
     pb_table_non = pb_table.dropna(how="any")
     playbook_ID_list = pb_table_non['ID'].unique()
-    playbook_name_list = pb_table_non['playbook name'].unique()  # extract mitre ics attack name list
-    playbook_exist_list = pb_table_non['playbook existence'].unique()
-    playbook_list = [[ID, playbook_name, playbook_existence] for ID, playbook_name, playbook_existence in zip(playbook_ID_list, playbook_name_list, playbook_exist_list)]
+    playbook_name_list = pb_table_non['playbook_name'].unique()  # extract mitre ics attack name list
+    # playbook_exist_list = pb_table_non['playbook_existence'].unique()
+    # playbook_list = [[ID, playbook_name, playbook_existence] for ID, playbook_name, playbook_existence in zip(playbook_ID_list, playbook_name_list, playbook_exist_list)]
+    playbook_list = [[ID, playbook_name] for ID, playbook_name in zip(playbook_ID_list, playbook_name_list)]
 
     return playbook_list
 
@@ -57,7 +78,7 @@ def sirp_match_playbook(case):
     for i in range(len(sirp_playbook_data())):
         if case[1] == sirp_playbook_data()[i][1]:
             case[4] = 1 # playbook exists
-            break
+            print("find playbook")
 
         else:
             case[4] = 0 # playbook does not exists
@@ -70,6 +91,8 @@ def sirp_play_playbook(case):
     print("play this playbook..")
     # finding playbook
     
+    sirp_playbook_worked(case)
+
     if sirp_playbook_worked(case)[8] == 1:
         print("playbook was worked!")
 
@@ -87,7 +110,7 @@ def sirp_play_playbook(case):
 
 
 def sirp_playbook_worked(case):
-    print("check the playbook worked!")
+    print("check the playbook worked...")
     
     return case
 

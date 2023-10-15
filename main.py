@@ -55,6 +55,7 @@ case = [None, None, None, None, None, None, None, None]
 # 7번째 공격 대응 성공 여부(1가능, 2불가능, 3디폴트(초기화))
 # 8번째 개선사항 유무(1필요, 2불필요, 3디폴트(초기화))
 
+# print(SIRP.sirp_playbook_data())
 # TIP derive state of case 1
 case = TIP.tip_process(case)
 
