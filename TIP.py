@@ -40,9 +40,6 @@ def tip_process(case):
             SIRP.sirp_match_playbook(case)
 
             if case[4] == 1:   # playbook exist
-                print("------------------------------")
-                print(case)
-                print("------------------------------")
                 tip_accident_risk_eval(case)
 
                 if case[6] == 1:  # this attack risk is major or critical
