@@ -1,0 +1,63 @@
+# This is Data Loss incident playbook
+# In STATE OF ALABAMA
+# Written in Sudocode
+
+def main(step):
+    preparation()
+    detection_and_analysis()
+    containment,_Eradication_and_recovery()
+    post-incident_activity()
+
+
+def preparation():
+    goto_Contact_information_for_team_members_and_others_within_and_outside_the_organization
+    goto_On-call_information_for_other_teams_within_the_organization,_including_escalation_information
+    goto_Incident_reporting_mechanisms
+    goto_Issue_tracking_system_for_tracking_incident_information
+    goto_Encryption_software_to_be_used_for_communications_among_team_members
+    goto_Secure_storage_facility_for_securing_evidence_and_other_sensitive_materials
+    goto_Digital_forensic_workstations_and/or_backup_devices_to_create_disk_images,_preserve_log_files,_and_save_other_relevant_incident_data
+    goto_Portable_printer_to_print_copies_of_log_files_and_other_evidence_from_non-networked_systems
+    goto_Packet_sniffers_and_protocol_analyzers_to_capture_and_analyze_network_traffic
+    goto_Digital_forensic_software_to_analyze_disk_images
+    goto_Port_lists,_including_commonly_used_ports_and_Trojan_horse_ports
+    goto_Documentation_for_OSs,_applications,_protocols,_and_intrusion_detection_and_antivirus_products
+    goto_Access_to_images_of_clean_OS_and_application_installations_for_restoration_and_recovery_purposes
+
+
+
+def detection_and_analysis():
+    goto_Determine_whether_an_incident_has_occurred
+    goto_Analyze_the_precursors_and_indicators
+    goto_Look_for_correlating_information
+    goto_Perform_research
+    goto_As_soon_as_the_handler_believes_an_incident_has_occurred,_begin_documenting_the_investigation_and_gathering_evidence
+    goto_Prioritize_handling_the_incident_based_on_the_relevant_factors
+    goto_Report_the_incident_to_the_appropriate_internal_personnel_and_external_organizations
+
+
+def containment_Eradication_and_recovery():
+    goto Acquire_preserve_secure_and_document_evidence
+    goto Verify_authenticity_and_origin_of_data_loss
+    goto Identify_the_data_that_was_inappropriately_disclosed_used_or_lost
+    goto Identify_how_the_data_was_inappropriately_disclosed_used_or_lost
+    goto Assess_the_potential_damage_caused_by_data_loss
+    goto Identify_the_individuals_potentially_affected_by_the_loss_of_personally_identifiable_information(PII)
+    goto Estimate_the_current_and_potential_technical_effect_of_the_incident
+    goto Estimate_the_potential_economic_damage_caused_by_the_data_loss
+    goto Contain_the_incident
+    goto Identify_data_distribution_and_protection_mechanisms
+    goto Verify_that_data_distribution_and_protection_mechanisms_are_functioning_properly
+    goto Eradicate_the_incident
+    goto Review_and_update_detection_schemes_and_data_management_processes
+    goto Review_and_update_if_necessary_data_protection_policies_and_standards
+    goto Regularly_check_previously_exploited_vulnerabilities_and_systems
+    goto Recover_from_the_incident
+    goto Restore_the_data_from_trusted_backup_media
+    goto Confirm_that_data_distribution_and_protection_mechanisms_are_functioning_properly
+    goto Implement_additional_monitoring_to_watch_for_future_data_loss
+
+def post-incident_activity():
+    goto_Create_a_follow-up_report
+    goto_Hold_a_lessons_learned_meeting
+
