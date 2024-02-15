@@ -5,7 +5,11 @@
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv_tmp" />
     </content>
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Python 3.11 (IITP_workflow)" jdkType="Python SDK" />
+=======
+    <orderEntry type="jdk" jdkName="isaa-iitp" jdkType="Python SDK" />
+>>>>>>> 3e9295dc1f52c07fb53c4baabcaaedf8ff670a83
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
