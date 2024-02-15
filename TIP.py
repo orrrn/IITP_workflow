@@ -7,7 +7,7 @@ import pandas as pd
 import openpyxl
 import numpy as np
 import os
-
+#terst
 #case
 # 0번째 IT/OT 스트링
 # 1번째 공격벡터-하위내용
